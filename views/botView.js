@@ -10,7 +10,7 @@ module.exports = {
     },
 
     sendEmployeePrompt(ctx) {
-        ctx.reply('Введите номер сотрудника:');
+        ctx.reply('Введите табельный номер сотрудника:');
     },
 
     sendWelcome(ctx, employeeName) {
