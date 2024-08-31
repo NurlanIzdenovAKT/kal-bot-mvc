@@ -31,7 +31,7 @@ exports.handleTextMessage = async (ctx) => {
                 session.step = 'getEmployeeNumber';
                 await ctx.reply('Введите номер сотрудника:');
             } else {
-                await ctx.reply('Неверный ввод. Пожалуйста, укажите организацию: KAL или KBL.', 
+                await ctx.reply('Пожалуйста, укажите организацию: KAL или KBL.', 
                     Markup.keyboard([
                         ['KAL', 'KBL'],
                         ['End Session', 'Next Stock Code']
@@ -62,7 +62,7 @@ exports.handleTextMessage = async (ctx) => {
                 }
                 session.stockCode = stockCode;
                 session.step = 'getPhoto';
-                await ctx.reply('Сток код сохранен. Пожалуйста, отправьте фотографию.', 
+                await ctx.reply('Сток код сохранен. Зайдите в камеру телеграм чата сделайте фото и отпрвавьте.', 
                     Markup.keyboard([
                         [{ text: 'Send Photo', request_contact: false, request_location: false }],
                         ['End Session', 'Next Stock Code']

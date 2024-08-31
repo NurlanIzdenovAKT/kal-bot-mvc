@@ -18,7 +18,7 @@ module.exports = {
     },
 
     sendInvalidOrganization(ctx) {
-        ctx.reply('Неверный ввод. Пожалуйста, укажите организацию: KAL или KBL.');
+        ctx.reply('Пожалуйста, укажите организацию: KAL или KBL.');
     },
 
     sendUnauthorized(ctx) {
@@ -46,7 +46,7 @@ module.exports = {
     },
 
     sendPhotoUploaded(ctx) {
-        ctx.reply('Фотография успешно загружена и записана. Пожалуйста, введите следующий сток код или напишите /end для завершения.');
+        ctx.reply('Фотография успешно загружена и сохранена. Пожалуйста, введите следующий сток код или напишите /end для завершения.');
     },
 
     sendPhotoProcessingError(ctx) {
